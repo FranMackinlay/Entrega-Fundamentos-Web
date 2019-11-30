@@ -26,9 +26,6 @@ header > div{
 a {
   color: whitesmoke;
 }
-p {
-  /* margin: 0; */
-}
 .logo {
   display: flex;
   justify-content: flex-start;
