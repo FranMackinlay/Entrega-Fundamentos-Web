@@ -57,16 +57,11 @@ h1 {
   border-radius: 5px;
   color: red;
 }
-.header-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.header {
   text-align: center;
-  margin: 0 auto;
-  height: 200px;
-  background-size: cover;
-  
+  margin: 20px 0;
 }
+
 div[class^="series-list"] > ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -160,8 +155,9 @@ a {
     background: black;
     margin: 0;
   }
-  .header-wrapper {
-    margin-top: 20px;
+  .header {
+    margin-top: 74px;
+    margin-bottom: 40px;
   }
   h3 {
     margin: 0;
