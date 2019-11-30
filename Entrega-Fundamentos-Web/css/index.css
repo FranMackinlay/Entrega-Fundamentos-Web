@@ -29,7 +29,7 @@ h1 {
 .navbar {
   background-color: black;
   color: white;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
@@ -58,8 +58,10 @@ h1 {
   color: red;
 }
 .header {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  margin: 20px 0;
+  margin-top: 74px;
 }
 
 div[class^="series-list"] > ul {
@@ -134,7 +136,7 @@ a {
 }
 @media all and (max-width: 768px) {
   .navbar {
-    width: 20%;
+    width: 34%;
   }
   .navbar > .navbar-list {
     display: none;
