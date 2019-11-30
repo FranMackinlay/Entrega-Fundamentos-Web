@@ -62,7 +62,7 @@ p {
   bottom: 0;
   left: 0;
   max-width: 35%;
-  min-width: 35%;
+  min-width: 320px;
 }
 .login-inputs {
   display: grid;
@@ -118,8 +118,8 @@ p {
     margin: 0 auto;
     font-size: 10px;
     width: 70%;
-    max-width: 40%;
-    min-width: 40%;
+    max-width: 320px;
+    min-width: 200px;
   }
   .login-inputs > input {
     display: block;
