@@ -52,6 +52,16 @@ h1 {
   padding: 1rem;
   display: block;
 }
+#buscar {
+  align-self: center;
+}
+.navbar-item > form > input {
+  background-color: black;
+  color: white;
+  border: solid 1px gray;
+  border-radius: 10px;
+  padding: 5px;
+}
 .navbar-item a:hover {
   background-color: rgba(100, 100, 100, .4);
   border-radius: 5px;
@@ -136,14 +146,14 @@ a {
 }
 @media all and (max-width: 768px) {
   .navbar {
-    width: 34%;
+    width: fit-content;
   }
   .navbar > .navbar-list {
     display: none;
     flex-direction: column;
     margin-top: 51px;
     justify-content: flex-start;
-    padding: 0;
+    padding: 10px;
     text-align: center;
   }
   .logo {
