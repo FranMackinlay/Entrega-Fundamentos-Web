@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -7,22 +8,298 @@
   <link rel="stylesheet" href="./css/vista-pelicula.css">
   <title>Pelicula</title>
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="logo">
-          <img src="./img/logo.png" alt="Logo Netflix">
-        </div>
-    
-        <input type="checkbox" name="" id="burger-checkbox">
-        <label for="burger-checkbox" class="burger-label"></label>
-    
-        <ul class="navbar-list">
-          <li class="navbar-item"><a href="#novedades">Novedades</a></li>
-          <li class="navbar-item"><a href="#series">Series</a></li>
-          <li class="navbar-item"><a href="#peliculas">Peliculas</a></li>
-          <li class="navbar-item"><a href="#">Buscar</a></li>
-          <li class="navbar-item"><a href="./login.html">Cerrar Sesión</a></li>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./img/logo.png" alt="Logo Netflix">
+    </div>
+
+    <input type="checkbox" name="" id="burger-checkbox">
+    <label for="burger-checkbox" class="burger-label"></label>
+
+    <ul class="navbar-list">
+      <li class="navbar-item"><a href="index.html">Novedades</a></li>
+      <li class="navbar-item"><a href="#series">Series</a></li>
+      <li class="navbar-item"><a href="#peliculas">Peliculas</a></li>
+      <li class="navbar-item" id="buscar">
+        <form action="">
+          <input type="text" name="buscar" id="buscar" placeholder="Buscar..">
+        </form>
+      </li>
+      <li class="navbar-item"><a href="./login.html">Cerrar Sesión</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="movie-container">
+      <video src="./video/video.mp4" autoplay muted loop poster="./img/bground-movie.jpg"></video>
+      <div class="wrapper">
+        <h1>Star Wars: The Last Jedi</h1>
+        <ul class="basic-info">
+          <li class="info-item">Calificacion: 90%</li>
+          <li class="info-item">Año de publicación: 2019</li>
+          <li class="info-item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quibusdam, asperiores id distinctio architecto vero eligendi
+            quia labore perferendis quam, facilis, quidem placeat nemo.
+            Asperiores ex id nam illo possimus animi.
+          </li>
+          <li class="info-item">Actúan: Actúan: Lorem Ipsum, Lorem Pisum, Lorem Pasum.</li>
+          <ul class="btn-list">
+            <li class="info-item"><button class="play">I> Reproducir</button></li>
+            <li class="info-item"><button class="my-list">+ Mi Lista</button></li>
+          </ul>
         </ul>
-      </nav>
+      </div>
+    </section>
+    <section class="related-content">
+      <div class="series-list1" id="novedades">
+        <h3>Contenido Relacionado</h3>
+        <ul class="ul-list">
+          <li>
+            <div class="serie-card">
+              <div class="card-front">
+                <img src="https://picsum.photos/250/150"></img>
+              </div>
+              <div class="card-back">
+                <h2>Titulo</h2>
+                <ul>
+                  <li>
+                    <p>Calificacion: 90%</p>
+                  </li>
+                  <li>Año de publicacion: 2019</li>
+                  <li>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      At id dolor minus dicta magnam! Tempora ex deserunt.
+                    </p>
+                  </li>
+                  <li>Actúan: Lorem Ipsum, Lorem Pisum, Lorem Pasum.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="serie-card">
+              <div class="card-front">
+                <img src="https://picsum.photos/250/150"></img>
+              </div>
+              <a href="https://google.com.ar" class="card-back">
+                <h2>Titulo</h2>
+                <ul>
+                  <li>
+                    <p>Calificacion: 90%</p>
+                  </li>
+                  <li>Año de publicacion: 2019</li>
+                  <li>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      At id dolor minus dicta magnam! Tempora ex deserunt.
+                    </p>
+                  </li>
+                  <li>Actúan: Lorem Ipsum, Lorem Pisum, Lorem Pasum.
+                  </li>
+                </ul>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="serie-card">
+              <div class="card-front">
+                <img src="https://picsum.photos/250/150"></img>
+              </div>
+              <div class="card-back">
+                <h2>Titulo</h2>
+                <ul>
+                  <li>
+                    <p>Calificacion: 90%</p>
+                  </li>
+                  <li>Año de publicacion: 2019</li>
+                  <li>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      At id dolor minus dicta magnam! Tempora ex deserunt.
+                    </p>
+                  </li>
+                  <li>Actúan: Lorem Ipsum, Lorem Pisum, Lorem Pasum.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="serie-card">
+              <div class="card-front">
+                <img src="https://picsum.photos/250/150"></img>
+              </div>
+              <div class="card-back">
+                <h2>Titulo</h2>
+                <ul>
+                  <li>
+                    <p>Calificacion: 90%</p>
+                  </li>
+                  <li>Año de publicacion: 2019</li>
+                  <li>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      At id dolor minus dicta magnam! Tempora ex deserunt.
+                    </p>
+                  </li>
+                  <li>Actúan: Lorem Ipsum, Lorem Pisum, Lorem Pasum.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="serie-card">
+              <div class="card-front">
+                <img src="https://picsum.photos/250/150"></img>
+              </div>
+              <div class="card-back">
+                <h2>Titulo</h2>
+                <ul>
+                  <li>
+                    <p>Calificacion: 90%</p>
+                  </li>
+                  <li>Año de publicacion: 2019</li>
+                  <li>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      At id dolor minus dicta magnam! Tempora ex deserunt.
+                    </p>
+                  </li>
+                  <li>Actúan: Lorem Ipsum, Lorem Pisum, Lorem Pasum.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="serie-card">
+              <div class="card-front">
+                <img src="https://picsum.photos/250/150"></img>
+              </div>
+              <div class="card-back">
+                <h2>Titulo</h2>
+                <ul>
+                  <li>
+                    <p>Calificacion: 90%</p>
+                  </li>
+                  <li>Año de publicacion: 2019</li>
+                  <li>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      At id dolor minus dicta magnam! Tempora ex deserunt.
+                    </p>
+                  </li>
+                  <li>Actúan: Lorem Ipsum, Lorem Pisum, Lorem Pasum.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="serie-card">
+              <div class="card-front">
+                <img src="https://picsum.photos/250/150"></img>
+              </div>
+              <div class="card-back">
+                <h2>Titulo</h2>
+                <ul>
+                  <li>
+                    <p>Calificacion: 90%</p>
+                  </li>
+                  <li>Año de publicacion: 2019</li>
+                  <li>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      At id dolor minus dicta magnam! Tempora ex deserunt.
+                    </p>
+                  </li>
+                  <li>Actúan: Lorem Ipsum, Lorem Pisum, Lorem Pasum.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="serie-card">
+              <div class="card-front">
+                <img src="https://picsum.photos/250/150"></img>
+              </div>
+              <div class="card-back">
+                <h2>Titulo</h2>
+                <ul>
+                  <li>
+                    <p>Calificacion: 90%</p>
+                  </li>
+                  <li>Año de publicacion: 2019</li>
+                  <li>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      At id dolor minus dicta magnam! Tempora ex deserunt.
+                    </p>
+                  </li>
+                  <li>Actúan: Lorem Ipsum, Lorem Pisum, Lorem Pasum.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="serie-card">
+              <div class="card-front">
+                <img src="https://picsum.photos/250/150"></img>
+              </div>
+              <div class="card-back">
+                <h2>Titulo</h2>
+                <ul>
+                  <li>
+                    <p>Calificacion: 90%</p>
+                  </li>
+                  <li>Año de publicacion: 2019</li>
+                  <li>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      At id dolor minus dicta magnam! Tempora ex deserunt.
+                    </p>
+                  </li>
+                  <li>Actúan: Lorem Ipsum, Lorem Pisum, Lorem Pasum.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="serie-card">
+              <div class="card-front">
+                <img src="https://picsum.photos/250/150"></img>
+              </div>
+              <div class="card-back">
+                <h2>Titulo</h2>
+                <ul>
+                  <li>
+                    <p>Calificacion: 90%</p>
+                  </li>
+                  <li>Año de publicacion: 2019</li>
+                  <li>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      At id dolor minus dicta magnam! Tempora ex deserunt.
+                    </p>
+                  </li>
+                  <li>Actúan: Lorem Ipsum, Lorem Pisum, Lorem Pasum.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
