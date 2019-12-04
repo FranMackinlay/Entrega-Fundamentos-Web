@@ -125,19 +125,22 @@ div[class^="series-list"] > ul {
   font-size: 10px;
   border-radius: 5px;
 }
-.card-back > h2 {
+.card-back > a > h2 {
   margin: 0;
 }
 .card-back {
   padding: 10px;
   font-size: .6rem;
 }
-.card-back > ul {
+.card-back > a > ul {
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+.card-back > a > ul > li {
+  margin: 4px;
 }
 .bgimage {
   width: 250px;
