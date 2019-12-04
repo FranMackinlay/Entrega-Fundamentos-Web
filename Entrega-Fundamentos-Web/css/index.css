@@ -96,6 +96,8 @@ div[class^="series-list"] > ul {
 }
 .card-front > img {
   border-radius: 5px;
+  width: 250px;
+  height: 150px;
 }
 .serie-card {
   transition-duration: .5s;
