@@ -80,6 +80,8 @@ h1 {
 }
 video {
   position: absolute;
+  width: 100vw;
+  min-width: 910px;
 }
 .wrapper {
   width: 50vw;
@@ -196,7 +198,11 @@ div[class^="series-list"] > ul {
 
 
 
-
+@media all and (max-width: 1000px) {
+  .wrapper {
+    font-size: 10px;
+  }
+}
 
 @media all and (max-width: 768px) {
   .navbar {
@@ -271,6 +277,7 @@ div[class^="series-list"] > ul {
     font-size: 15px;
     min-height: 380px;
     align-self: center;
+    font-size: 16px;
   }
   .related-content {
     margin: 50px 0;
@@ -291,3 +298,4 @@ div[class^="series-list"] > ul {
     min-width: 250px;
   }
 }
+
