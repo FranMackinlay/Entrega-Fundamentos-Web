@@ -11,9 +11,9 @@
 
 <body>
   <nav class="navbar">
-    <div class="logo">
+    <a href="./index.html" class="logo">
       <img src="./img/logo.png" alt="Logo Netflix">
-    </div>
+    </a>
 
     <input type="checkbox" name="" id="burger-checkbox">
     <label for="burger-checkbox" class="burger-label"></label>
@@ -32,6 +32,7 @@
   </nav>
   <main>
     <section class="movie-container">
+      <!-- El video esta sin sonido porque no quedan bien los controles y sin js no se puede hacer un :hover play -->
       <video src="./video/video.mp4" autoplay muted loop poster="./img/bground-movie.jpg"></video>
       <div class="wrapper">
         <h1>Star Wars: The Last Jedi</h1>
@@ -46,7 +47,7 @@
           </li>
           <li class="info-item">Actúan: Actúan: Lorem Ipsum, Lorem Pisum, Lorem Pasum.</li>
           <ul class="btn-list">
-            <li class="info-item"><button class="play">I> Reproducir</button></li>
+            <li class="info-item"><button class="play">Reproducir</button></li>
             <li class="info-item"><button class="my-list">+ Mi Lista</button></li>
           </ul>
         </ul>
