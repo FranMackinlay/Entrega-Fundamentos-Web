@@ -1,240 +1,248 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
 *,
 *:after,
 *:before {
-    box-sizing: border-box;
-    font-family: Roboto;
+  box-sizing: border-box;
+  font-family: Roboto;
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
+  width: 0px;
+  background: transparent;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    color: white;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
 }
 
 h1 {
-    font-size: 30px;
-    margin: 0;
+  font-size: 30px;
+  margin: 0;
 }
 
 .logo>img {
-    width: 100px;
-    height: 50px;
+  width: 100px;
+  height: 50px;
 }
 
 .logo {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 .navbar {
-    background-color: black;
-    color: white;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-    display: flex;
-    align-items: center;
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
 }
 
 .navbar>.navbar-list {
-    list-style-type: none;
-    margin: 0;
-    flex: 1 100%;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  flex: 1 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .navbar-item a {
-    color: white;
-    text-decoration: none;
-    padding: 1rem;
-    display: block;
-    margin: 0 5px;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+  margin: 0 5px;
 }
 
 #buscar {
-    align-self: center;
+  align-self: center;
 }
 
 .navbar-item>form>input {
-    background-color: black;
-    color: white;
-    border: solid 1px gray;
-    border-radius: 10px;
-    padding: 5px;
+  background-color: black;
+  color: white;
+  border: solid 1px gray;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .navbar-item a:hover {
-    background-color: rgba(100, 100, 100, 0.4);
-    border-radius: 5px;
-    color: red;
+  background-color: rgba(100, 100, 100, 0.4);
+  border-radius: 5px;
+  color: red;
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 74px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 74px;
 }
 
 div[class^="series-list"]>ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 .lists-container {
-    margin: 10px;
+  margin: 10px;
 }
 
 .ul-list {
-    width: 100%;
-    overflow: auto;
-    padding: 10px;
+  width: 100%;
+  overflow: auto;
+  padding: 10px;
 }
 
 .ul-list>li {
-    list-style-type: none;
-    /* border: solid 1px red; */
-    height: 150px;
-    width: 250px;
+  list-style-type: none;
+  /* border: solid 1px red; */
+  height: 150px;
+  width: 250px;
 }
 
 .card-front>img {
-    border-radius: 5px;
-    width: 250px;
-    height: 150px;
+  border-radius: 5px;
+  width: 250px;
+  height: 150px;
 }
 
 .serie-card {
-    transition-duration: 0.5s;
-    transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transition-delay: 0.25s;
+  transition-duration: 0.5s;
+  transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transition-delay: 0.25s;
 }
 
 .serie-card:hover {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .card-front,
 .card-back {
-    height: 100%;
+  height: 100%;
 }
 
 .card-front {
-    position: absolute;
-    width: 100%;
+  position: absolute;
+  width: 100%;
 }
 
 .card-back {
-    background-color: rgba(0, 0, 0, 0.5);
-    transform: rotateY(180deg);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 150px;
-    overflow: auto;
-    font-size: 10px;
-    border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 150px;
+  overflow: auto;
+  font-size: 10px;
+  border-radius: 5px;
 }
 
 .card-back>a>h2 {
-    margin: 0;
+  margin: 0;
 }
 
 .card-back {
-    padding: 10px;
-    font-size: 0.6rem;
+  padding: 10px;
+  font-size: 0.6rem;
 }
 
 .card-back>a>ul {
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .card-back>a>ul>li {
-    margin: 4px;
+  margin: 4px;
 }
 
 .bgimage {
-    width: 250px;
-    height: 150px;
+  width: 250px;
+  height: 150px;
 }
 
 #burger-checkbox {
-    display: none;
+  display: none;
 }
 
 a {
-    color: white;
-    text-decoration: none;
-    z-index: 999999;
+  color: white;
+  text-decoration: none;
+  z-index: 999999;
 }
 
 @media all and (max-width: 768px) {
-    .navbar {
-        width: fit-content;
-    }
-    .navbar>.navbar-list {
-        display: none;
-        flex-direction: column;
-        margin-top: 51px;
-        justify-content: flex-start;
-        padding: 10px;
-        text-align: center;
-    }
-    .logo {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        min-width: 320px;
-        line-height: 0px;
-        text-align: center;
-        background: black;
-        margin: 0;
-    }
-    .header {
-        margin-top: 74px;
-        margin-bottom: 40px;
-    }
-    h3 {
-        margin: 0;
-    }
-    #burger-checkbox:checked~.navbar-list {
-        display: inherit;
-    }
-    .burger-label {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 50px;
-        height: 50px;
-        margin: 0;
-        z-index: 9999;
-        font-size: 40px;
-    }
-    .burger-label:before {
-        content: "";
-        position: absolute;
-        width: 34px;
-        height: 4px;
-        background-color: gray;
-        left: 8px;
-        top: 13px;
-        box-shadow: 0 10px 0 0 gray, 0 20px 0 0 gray;
-        border-radius: 10px;
-    }
+  .navbar {
+    width: fit-content;
+  }
+
+  .navbar>.navbar-list {
+    display: none;
+    flex-direction: column;
+    margin-top: 51px;
+    justify-content: flex-start;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 320px;
+    line-height: 0px;
+    text-align: center;
+    background: black;
+    margin: 0;
+  }
+
+  .header {
+    margin-top: 74px;
+    margin-bottom: 40px;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  #burger-checkbox:checked~.navbar-list {
+    display: inherit;
+  }
+
+  .burger-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    z-index: 9999;
+    font-size: 40px;
+  }
+
+  .burger-label:before {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 4px;
+    background-color: gray;
+    left: 8px;
+    top: 13px;
+    box-shadow: 0 10px 0 0 gray, 0 20px 0 0 gray;
+    border-radius: 10px;
+  }
 }
